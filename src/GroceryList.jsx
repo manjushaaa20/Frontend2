@@ -7,7 +7,7 @@ const GroceryList = () => {
     const [formData, setFormData] = useState({ name: '', category: '', price: '', stock: '' });
     const [editingId, setEditingId] = useState(null);
 
-    const API_URL = 'http://localhost:9080/api/groceries'; // Change to your backend URL
+    const API_URL = 'https://grocery.herokuapp.com/api/groceries';
 
     useEffect(() => {
         fetchGroceries();
